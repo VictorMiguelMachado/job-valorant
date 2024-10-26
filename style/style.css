@@ -62,7 +62,12 @@ h1 {
     color: rgb(241, 228, 228);
 }
 
-p {
+.dc footer {
     font-family: 'Oswald';
-    text-align: left;
+    display: flex; /* Usar flexbox para o alinhamento */
+    justify-content: right; /* Centralizar o conteúdo */
+    display: inline-flexbox;
+    margin-top: 40px; /* Adiciona um espaço em cima do footer */ 
+    margin-right: 100px;
 }
+
