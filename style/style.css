@@ -61,3 +61,8 @@ h1 {
     text-align: center;
     color: rgb(241, 228, 228);
 }
+
+p {
+    font-family: 'Oswald';
+    text-align: left;
+}
