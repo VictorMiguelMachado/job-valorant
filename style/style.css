@@ -63,12 +63,22 @@ h1 {
 }
 
 .dc {
-    display: none;
     font-family: 'Oswald';
     display: flex; 
-    justify-content: right; 
-    display: inline-flexbox;
-    margin-top: 40px;
-    margin-right: 100px;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 100px; 
+    margin-top: 20px; 
 }
 
+.dc p {
+    margin: 0; 
+    padding: 0; 
+}
+
+.img-dc {
+    width: 60px;
+    height: auto; 
+    margin-left: 5px; 
+    margin-bottom: 40px;
+}
