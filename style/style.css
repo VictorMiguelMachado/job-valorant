@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,24 +7,57 @@
 }
 
 body {
-    background-color: rgb(41, 41, 43);
+    background-color: rgb(220, 220, 232);
 }
 
-img {
-    opacity: 0.6;
-    width: 100%;
+header {
+    background-color: #000;
+}
+
+.img-dc {
+    position: fixed;
+    bottom: 0;
+    margin: 30px;
+    right: 0;
+    width: 50px;
+    height: auto;
+    z-index: 1000;
+}
+
+.imagem-quadrado {
+    width: 100px; 
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 80vh;
+}
+
+.form-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
+}
+
+form {
+    padding: 20px; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+.img-dc:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
 }
 
 h1 {
+    font-style: normal;
+    font-family: "Oswald", sans-serif;
     text-align: center;
-    color: goldenrod;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-a:hover{
-    color: rgb(186, 179, 179);
+    color: rgb(241, 228, 228);
 }
