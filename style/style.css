@@ -64,10 +64,10 @@ h1 {
 
 .dc footer {
     font-family: 'Oswald';
-    display: flex; /* Usar flexbox para o alinhamento */
-    justify-content: right; /* Centralizar o conteúdo */
+    display: flex; 
+    justify-content: right;
     display: inline-flexbox;
-    margin-top: 40px; /* Adiciona um espaço em cima do footer */ 
+    margin-top: 40px; 
     margin-right: 100px;
 }
 
