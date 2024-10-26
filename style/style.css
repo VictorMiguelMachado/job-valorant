@@ -63,11 +63,24 @@ h1 {
 }
 
 .dc footer {
-    font-family: 'Oswald';
     display: flex; 
-    justify-content: right;
-    display: inline-flexbox;
-    margin-top: 40px; 
-    margin-right: 100px;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px; 
 }
 
+.footer-content {
+    display: flex; 
+    align-items: center; 
+}
+
+.footer-content p {
+    margin: 0; 
+    padding: 0;
+}
+
+.img-dc {
+    width: 60px; 
+    height: auto; 
+    margin-left: 5px;
+}
