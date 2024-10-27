@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const selectElo = document.getElementById('elo');
-    const quadrado = document.getElementById('quadrado');
-    const selectElo2 = document.getElementById('elo2'); 
-    const quadrado2 = document.getElementById('quadrado2');
+    const selectElo = document.getElementById('elo'); // Primeiro select
+    const quadrado = document.getElementById('quadrado'); // Quadrado do primeiro formulário
+    const selectElo2 = document.getElementById('elo2'); // Segundo select (atualize o ID)
+    const quadrado2 = document.getElementById('quadrado2'); // Quadrado do segundo formulário
 
-
+    // Define um objeto com as imagens correspondentes para os dois selects
     const imagens = {
         ferro1: 'assets/ferro1-removebg-preview.png',
         ferro2: 'assets/ferro2-removebg-preview.png',
-        ferro3: 'assets/ferro3.png',
+        ferro3: 'assets/ferro3-removebg-preview.png',
         bronze1: 'assets/bronz1-removebg-preview.png',
         bronze2: 'assets/bronze2-removebg-preview.png',
         bronze3: 'assets/bronze3-removebg-preview.png',
@@ -33,35 +33,35 @@ document.addEventListener('DOMContentLoaded', function () {
         radiante: 'assets/radiante-removebg-preview.png',
     };
 
-    
+    // Evento para o primeiro select
     selectElo.addEventListener('change', function () {
         const valorSelecionado = selectElo.value;
 
         // Muda a imagem do quadrado de acordo com a opção selecionada
         if (imagens[valorSelecionado]) {
             quadrado.style.backgroundImage = `url(${imagens[valorSelecionado]})`;
-            quadrado.style.backgroundSize = 'cover';
+            quadrado.style.backgroundSize = 'cover'; // Faz a imagem cobrir o quadrado
         } else {
-            quadrado.style.backgroundImage = 'none';
+            quadrado.style.backgroundImage = 'none'; // Reseta a imagem se não houver opção
         }
 
-
+        // Adiciona uma classe para estilizar a opção "Escolha" como desabilitada
         selectElo.classList.add('opcao-escolhida');
     });
 
-
+    // Evento para o segundo select
     selectElo2.addEventListener('change', function () {
         const valorSelecionado = selectElo2.value;
 
-        
+        // Muda a imagem do quadrado2 de acordo com a opção selecionada
         if (imagens[valorSelecionado]) {
             quadrado2.style.backgroundImage = `url(${imagens[valorSelecionado]})`;
-            quadrado2.style.backgroundSize = 'cover'; 
+            quadrado2.style.backgroundSize = 'cover'; // Faz a imagem cobrir o quadrado2
         } else {
-            quadrado2.style.backgroundImage = 'none'; 
+            quadrado2.style.backgroundImage = 'none'; // Reseta a imagem se não houver opção
         }
 
-        
+        // Adiciona uma classe para estilizar a opção "Escolha" como desabilitada
         selectElo2.classList.add('opcao-escolhida');
     });
 });
