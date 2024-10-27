@@ -52,10 +52,11 @@ header h1, footer .dc {
 }
 
 
-header {
+/* header {
     /* background-color: #000; */
-    /* opacity: 0.1; */
-}
+    /* opacity: 0.1; 
+}*/
+
 
 header h1 {
     border-style: none;
