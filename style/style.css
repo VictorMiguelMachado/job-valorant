@@ -1,62 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #090814;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
 * {
+    font-family: 'Oswald';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 body {
-    background-color: rgb(220, 220, 232);
     background-image: url('/assets/image.png');  
     background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center; 
-    z-index: -1;
-    
+    background-position: center;
 }
 
-
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-body {
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-}
-
-header h1, footer .dc {
-    position: relative;
-    z-index: 1;
-}
-
-
-header {
-    /* background-color: #000; */
-    /* opacity: 0.1; */
-}
-
+/* H1's */
 header h1 {
     border-style: none;
     border-radius: 10px;
@@ -64,42 +29,51 @@ header h1 {
     opacity: 0,5;
 }
 
-.img-dc {
-    position: fixed;
-    bottom: 0;
-    margin: 30px;
-    right: 0;
-    width: 50px;
-    height: auto;
-    z-index: 1000;
+h1 {
+    font-style: normal;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: rgb(241, 228, 228);
 }
+/* ------------ */
 
+/* LOCAL ONDE APARECE O ELO */
 .imagem-quadrado {
     width: 100px; 
     height: 100px;
     background-size: cover;
     margin-bottom: 20px;
 }
+/* ------------ */
 
-.container {
+.container { /* Deixa os elos lado a lado */
     display: flex;
     justify-content: center; 
     align-items: flex-start; 
     height: 80vh;
 }
 
-.form-container {
+.form-container { /* Deixa os elos alinhados */
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     margin: 20px; 
 }
 
+/* FORMULARIO */
 form {
     padding: 30px; 
     font-family: 'Oswald', sans-serif; 
 }
 
+label { /* Escolha seu elo/Elo desejado */
+    font-size: large;
+    color: #fff;
+}
+/* ------------ */
+
+
+/* IMAGEM DOS ELOS */
 #elo{
     color: #fff ;
     background-color: #110C28;
@@ -119,64 +93,148 @@ form {
     outline: none;
     border: none;
 }
+/* ------------ */
 
 
-label {
-    font-size: large;
-    color: #fff;
-}
+/* FOOTER */
 
-.img-dc:hover {
-    transition: transform 0.3s ease;
-    transform: scale(1.2);
-}
-
-h1 {
-    font-style: normal;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    color: rgb(241, 228, 228);
-}
-
-.dc {
-    font-family: 'Oswald';
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
-    margin-right: 100px; 
-    margin-top: 20px; 
-}
-
-.dc p {
-    color: #fff;
-    margin: 0; 
-    padding: 0; 
-}
-
-.img-dc {
-    width: 60px;
-    height: auto; 
-    margin-left: 5px; 
-    margin-bottom: 47px;
-}
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
+footer {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    color: var(--color-neutral-40);
 }
 
-.video-background video {
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: #090814;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4;
+}
+
+.footer-list .footer-link:hover{
+    color: #7f3fc9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--color-neutral-30);
+}
+/* ------------ */
+
+/* REDES SOCIAIS */
+#Discord {
+    background-color: #7487CC;
+}
+
+#TikTok {
+    background-color: #050505;
+}
+
+#Instagram {
+    background: linear-gradient(#7f3fc9, #ff2992, #ff9807);
+}
+/* ------------ */
+
+/* INPUTS */
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-40);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
     width: 100%;
+}
+
+#input_group button {
+    background-color: #7f3fc9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
 }
-header, main, footer {
-    position: relative;
-    z-index: 1;
+
+#input_group button:hover {
+    opacity: 0.5;
 }
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}/* ------------ */
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1ft);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1ft);
+        padding: 3rem 2rem;
+    }
+}
+/* ------------ */
