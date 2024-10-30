@@ -39,6 +39,16 @@ h1 {
     text-align: center;
     color: rgb(241, 228, 228);
 }
+
+.bra {
+    color: gold;
+}
+.s {
+    color: blue;
+}
+.il {
+    color: rgb(5, 188, 5);
+}
 /* ------------ */
 
 /* LOCAL ONDE APARECE O ELO */
