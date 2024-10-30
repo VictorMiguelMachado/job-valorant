@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+@font-face {
+    font-family: 'Valorant Font';
+    src: url('/assets/Valorant\ Font.ttf');
+}
 :root{
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #090814;
@@ -8,7 +12,7 @@
 }
 
 * {
-    font-family: 'Oswald';
+    font-family: 'Valorant Font';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,7 +20,7 @@
 }
 
 body {
-    background-image: url('/assets/image.png');
+    background-image: url('/assets/killjoy.jpeg');  
     background-size: cover; 
     background-position: center;
 }
@@ -31,7 +35,7 @@ header h1 {
 
 h1 {
     font-style: normal;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Valorant Font';
     text-align: center;
     color: rgb(241, 228, 228);
 }
@@ -67,11 +71,53 @@ form {
 }
 
 label { /* Escolha seu elo/Elo desejado */
+    font-family: 'Valorant Font';
     font-size: large;
     color: #fff;
 }
 /* ------------ */
 
+/* IMAGEM DA SAGE */
+
+.imagem_sage img {
+    height: 500px;
+}
+
+.imagem_sage {
+    background-color: #110C28;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #a8a29e;
+}
+
+#faq2 {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #a8a29e;
+    }
+
+#faq h4{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#faq2 h4{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* ------------ */
 
 /* IMAGEM DOS ELOS */
 #elo{
