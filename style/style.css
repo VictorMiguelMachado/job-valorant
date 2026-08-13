@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Valorant Font';
-    src: url('/assets/Valorant\Font.ttf');
+    src: url('\assets\Valorant Font.ttf');
 }
 :root{
     --color-neutral-0: #0e0c0c;
